@@ -1,0 +1,23 @@
+{
+  "name": "ccsp-experience-platform",
+  "version": "1.0.0",
+  "description": "[Design Standards:]",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klaenejm/ccsp-experience-platform.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/klaenejm/ccsp-experience-platform/issues"
+  },
+  "homepage": "https://github.com/klaenejm/ccsp-experience-platform#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
