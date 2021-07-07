@@ -1,0 +1,77 @@
+html {
+  height: 100%;
+  font-family: Helvetica;
+}
+
+body {
+  background-color: #4e726b;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.commander {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  font-size: 30pt;
+  /** change the font after download */
+  font-family: Helvetica;
+  color: #ffffff;
+}
+
+.wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  border: 2rem solid rgba(0, 0, 0, 0.5);
+}
+
+.left {
+  grid-column: 1 / 5;
+  padding-right: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left img {
+  height: 30%;
+  width: 100%;
+}
+
+.left nav {
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  background-color: (0, 0, 0, 0.5);
+}
+
+.left nav .nav-item {
+  padding: 2rem;
+  background-color: #c4c4c4;
+  color: #666;
+}
+
+.active {
+  background-color: #4e726b !important;
+  color: #fff !important;
+}
+
+.page {
+  background-color: black;
+  text-align: center;
+  padding: 1rem 0;
+  border: 1px solid white;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: white;
+  width: 50%;
+}
+
+.right {
+  grid-column: 5 / 13;
+}
