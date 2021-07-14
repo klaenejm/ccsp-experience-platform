@@ -1,6 +1,6 @@
 html {
   height: 100%;
-  font-family: Helvetica;
+  font-family: Bai Jamjuree;
 }
 
 body {
@@ -12,13 +12,13 @@ body {
 }
 
 .commander {
+  padding: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-
   font-size: 30pt;
-  /** change the font after download */
-  font-family: Helvetica;
   color: #ffffff;
+  text-transform: uppercase;
+  font-weight: normal;
 }
 
 .wrapper {
@@ -39,8 +39,14 @@ body {
 }
 
 .left img {
-  height: 30%;
-  width: 100%;
+  /*height: 30%;
+  height: 100%;
+  width: 100%; */
+  display: block;
+  max-width: 366px;
+  max-height: 366px;
+  width: auto;
+  height: auto;
 }
 
 .left nav {
@@ -48,16 +54,21 @@ body {
   flex-direction: column;
   height: 40%;
   background-color: (0, 0, 0, 0.5);
+  display: block;
+  max-width: 366px;
+  max-height: 366px;
+  width: auto;
+  height: auto;
 }
 
 .left nav .nav-item {
   padding: 2rem;
   background-color: #c4c4c4;
-  color: #666;
+  color: #000;
 }
 
 .active {
-  background-color: #4e726b !important;
+  background-color: #7f7f7f !important;
   color: #fff !important;
 }
 
@@ -74,4 +85,29 @@ body {
 
 .right {
   grid-column: 5 / 13;
+}
+
+.content {
+  padding: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 24pt;
+}
+
+.next {
+  /*padding: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 24pt; */
+
+  background-color: black;
+  text-align: center;
+  padding: 1rem 0;
+  border: 1px solid white;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: white;
+  width: 50%;
 }
