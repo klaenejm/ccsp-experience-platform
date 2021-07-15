@@ -113,7 +113,7 @@ body {
   font-weight: normal;
   font-size: 24pt; */
 
-  background-color: black;
+  background-color: #2f4c58;
   text-align: center;
   padding: 1rem 0;
   border: 1px solid white;
@@ -121,6 +121,21 @@ body {
   font-size: 1.8rem;
   color: white;
   width: 50%;
+}
+
+.action-menu {
+  padding: 2rem;
+  font-size: 30pt;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.terminal-links {
+  padding: 2rem;
+  font-size: 24pt;
+  color: #24ff00;
+  font-weight: normal;
 }
 
 /* ----------- Non-Retina Screens ----------- */
