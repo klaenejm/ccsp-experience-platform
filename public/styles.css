@@ -1,3 +1,5 @@
+/* ----------------------
+/* ---------------------- GLOBAL ---------------------- */
 html {
   height: 100%;
   font-family: Bai Jamjuree;
@@ -11,25 +13,6 @@ body {
   height: 100%;
 }
 
-.commander {
-  padding: 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  font-size: 30pt;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-weight: bolder;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.commander-image {
-  display: block !important;
-  max-width: 75px !important;
-  max-height: 75px !important;
-  width: auto !important;
-  height: auto !important;
-}
-
 .wrapper {
   height: fit-content;
   width: fit-content;
@@ -37,6 +20,20 @@ body {
   grid-template-columns: repeat(12, 1fr);
   border: 2rem solid rgba(0, 0, 0, 0.5);
 }
+
+.page {
+  background-color: black;
+  text-align: center;
+  padding: 1rem 0;
+  border: 1px solid white;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: white;
+  width: 50%;
+}
+
+/* ----------------------
+/* ---------------------- LEFT ---------------------- */
 
 .left {
   grid-column: 1 / 5;
@@ -83,19 +80,30 @@ body {
   color: #fff !important;
 }
 
-.page {
-  background-color: black;
-  text-align: center;
-  padding: 1rem 0;
-  border: 1px solid white;
-  font-weight: bold;
-  font-size: 1.8rem;
-  color: white;
-  width: 50%;
-}
+/* ----------------------
+/* ---------------------- RIGHT ---------------------- */
 
 .right {
   grid-column: 5 / 13;
+}
+
+.commander {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-size: 30pt;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bolder;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.commander-image {
+  display: block !important;
+  max-width: 75px !important;
+  max-height: 75px !important;
+  width: auto !important;
+  height: auto !important;
 }
 
 .content {
@@ -123,6 +131,9 @@ body {
   width: 50%;
 }
 
+/* ----------------------
+/* ---------------------- TERMINAL ---------------------- */
+
 .action-menu {
   padding: 2rem;
   font-size: 30pt;
@@ -137,6 +148,9 @@ body {
   color: #24ff00;
   font-weight: normal;
 }
+
+/* ----------------------
+/* ---------------------- MEDIA QUERIES ---------------------- */
 
 /* ----------- Non-Retina Screens ----------- */
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
