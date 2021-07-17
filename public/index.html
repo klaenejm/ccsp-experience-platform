@@ -5,41 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <!----------------------------------BODY--------------------------------------->
   <body>
     <div class="wrapper">
       <!----------------------------------LEFT--------------------------------------->
-      <div class="left">
-        <img src="assets/map.jpeg" alt="map" />
-        <nav>
-          <div class="nav-item active">Intelligence Briefing</div>
-          <div class="nav-item">Operation Cyber Fortress</div>
-          <div class="nav-item">From Cyber Command Mission Leader</div>
-        </nav>
-        <div class="page">1 / ?</div>
-      </div>
+      <div class="left" id="left"></div>
       <!----------------------------------RIGHT--------------------------------------->
       <div class="right">
-        <h1 class="commander">
-          Commander
-          <img
-            src="assets/dardania.png"
-            alt="crest-of-dardania"
-            class="commander-image"
-          />
-        </h1>
+        <div class="top-commander">
+          <div class="image-container">
+            <img
+              src="assets/dardania.png"
+              alt="crest-of-dardania"
+              class="commander-image"
+            />
+          </div>
+          <h1 class="commander">Commander</h1>
+        </div>
         <h3 class="content">
           Greetings Commander! Welcome to your first day as the Commander for
           the Kingdom of Dardania's Cyber Command. Today, you will be presented
           with an Intelligence Briefing and the details about our Operation
           Cyber Fortress.
         </h3>
-        <h4 class="next">
-          <a href="2.html">Next</a>
+        <h4 class="next arrow-link">
+          <a href="2.html"><i class="fas fa-long-arrow-alt-right"></i></a>
         </h4>
       </div>
     </div>
+    <script src="js/left.js"></script>
   </body>
 </html>
