@@ -15,6 +15,7 @@ body {
   box-sizing: border-box;
   height: 100%;
   display: flex;
+  overflow-y: hidden;
 }
 
 .wrapper {
@@ -37,6 +38,7 @@ body {
   left: 2rem;
   bottom: 2rem;
   max-width: 366px;
+  box-sizing: border-box;
 }
 
 .next {
@@ -54,6 +56,15 @@ body {
   margin-block-start: 0;
   margin-block-end: 0;
   height: 50px;
+}
+
+.black-border-top {
+  display: fixed;
+  width: 100%;
+  height: 2px;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: black;
 }
 
 .page,
@@ -113,11 +124,7 @@ body {
 }
 
 .left nav {
-  display: flex;
-  flex-direction: column;
-  height: 40%;
   background-color: (0, 0, 0, 0.5);
-  display: block;
   max-width: 366px;
   max-height: 366px;
   width: auto;
@@ -162,12 +169,22 @@ body {
   height: auto !important;
 }
 
+.content-wrap {
+  height: 100%;
+  max-height: 500px;
+  overflow-y: scroll;
+  border: 1px solid white;
+  margin: 4rem 1.5rem 0 1.5rem;
+}
+
 .content {
-  padding: 2rem;
+  padding: 0 2rem 0 2rem;
   color: #fff;
   text-transform: uppercase;
   font-weight: normal;
   font-size: 24pt;
+  /* margin-top: 20%; */
+  margin-bottom: 1rem;
 }
 
 /* ----------------------
@@ -186,6 +203,15 @@ body {
   font-size: 24pt;
   color: #24ff00;
   font-weight: normal;
+}
+
+/* ----------------------
+/* ---------------------- PAGES WITH TOP NAV ---------------------- */
+
+.top-nav {
+  display: flex;
+  width: 100%;
+  grid-column: 1 / 13;
 }
 
 /* ----------------------
