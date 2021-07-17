@@ -20,3 +20,17 @@ let template = `
 let leftContainer = document.getElementById("left");
 
 leftContainer.innerHTML = template;
+
+template = `
+  <div class="image-container">
+    <img
+      src="assets/dardania.png"
+      alt="crest-of-dardania"
+      class="commander-image"
+    />
+  </div>
+  <h1 class="commander">Commander</h1>`;
+
+let header = document.getElementById("top-commander");
+
+header.innerHTML = template;
