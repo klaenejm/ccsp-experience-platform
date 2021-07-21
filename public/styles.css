@@ -159,6 +159,7 @@ body {
   font-weight: bolder;
   background-color: rgba(0, 0, 0, 0.5);
   margin: 1.5rem;
+  width: 100%;
 }
 
 .commander-image {
@@ -205,6 +206,119 @@ body {
   font-weight: normal;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+
+.grid-left {
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.grid-right {
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.grid-left nav .nav-item {
+  padding: 2rem;
+  color: #fff;
+  background-color: #c4c4c4;
+}
+
+.grid-left nav .nav-item.current {
+  background-color: #7f7f7f;
+}
+
+.operation {
+  margin: 2rem 0;
+}
+
+.operation-title {
+  padding: 0.5rem 2rem;
+  color: #fff;
+  background-color: #7f7f7f;
+  font-size: 2rem;
+}
+
+.operation-content {
+  padding: 2rem;
+  background-color: #c4c4c4;
+  color: #fff;
+}
+
+.left-nav-drawer {
+  background-color: #c4c4c4;
+  width: 45%;
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+}
+
+.nav-drawer-page {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border: 1px solid white;
+  color: #fff;
+  font-weight: bold;
+  background-color: #000;
+}
+
+.arrow-next {
+  display: inline-block;
+  margin-left: auto;
+  float: right;
+  padding: 1rem 2rem;
+  border: 1px solid white;
+  font-size: 2rem;
+  background-color: #2f4c58;
+}
+
+.arrow-next a {
+  color: #ffffff;
+}
+
+.terminal {
+  height: 91.3%;
+  border: 1px solid white;
+  background-color: black;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.terminal h1 {
+  text-transform: uppercase;
+  color: #fff;
+  padding: 1.5rem;
+}
+
+.terminal .option {
+  padding: 1.5rem;
+}
+
+.terminal div .option a {
+  color: green;
+  text-decoration: none;
+}
+
+.terminal .select-action {
+  color: #7f7f7f;
+  align-self: flex-end;
+}
+
 /* ----------------------
 /* ---------------------- PAGES WITH TOP NAV ---------------------- */
 
@@ -212,6 +326,7 @@ body {
   display: flex;
   width: 100%;
   grid-column: 1 / 13;
+  background-color: #b1d8bd;
 }
 
 /* ----------------------

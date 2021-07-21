@@ -16,7 +16,7 @@
   </head>
   <!----------------------------------BODY--------------------------------------->
   <body>
-    <div class="wrapper">
+    <div class="container">
       <div class="top-nav">
         <div class="image-container">
           <img
@@ -27,30 +27,37 @@
         </div>
         <h1 class="commander">Commander</h1>
       </div>
-      <!----------------------------------LEFT--------------------------------------->
-      <div class="left">
-        <h3 class="content">
-          Commander, we have prepared a comprehensive spear-phishing attack for
-          which we have high confidence of success. Please use your action menu
-          to authorize this operation.
-        </h3>
-        <nav>
-          <div class="nav-item">Intelligence Briefing</div>
-          <div class="nav-item">Operation Cyber Fortress</div>
-          <div class="nav-item active">From Cyber Command Mission Leader</div>
-        </nav>
-        <div class="page">12 / ?</div>
-      </div>
-      <!----------------------------------RIGHT--------------------------------------->
-      <div class="right">
-        <div class="action-menu">
-          <h5>Action Menu</h5>
+      <div class="grid">
+        <div class="grid-left">
+          <div class="operation">
+            <div class="operation-title">Operation Cyber Fortress</div>
+            <div class="operation-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+              molestiae.
+            </div>
+          </div>
+          <nav>
+            <div class="nav-item">Intelligence Briefing</div>
+            <div class="nav-item current">Operation Cyber Fortress</div>
+            <div class="nav-item">From Cyber Command Mission Leader</div>
+          </nav>
+          <div class="left-nav-drawer">
+            <div class="nav-drawer-page">12 / 25</div>
+            <div class="arrow-next">
+              <a href="13.html"><i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
         </div>
-
-        <div class="terminal-links">
-          <p>
-            <a href="13.html">::: [Option 1] Launch Spear-phishing attack</a>
-          </p>
+        <div class="grid-right">
+          <div class="terminal">
+            <div>
+              <h1>Action Menu</h1>
+              <div class="option">
+                <a href="#">::: [Opt 1] Launch spear-phishing attack</a>
+              </div>
+            </div>
+            <h1 class="select-action">Select the action to proceed</h1>
+          </div>
         </div>
       </div>
     </div>
