@@ -156,10 +156,11 @@ body {
   font-size: 30pt;
   color: #ffffff;
   text-transform: uppercase;
-  font-weight: bolder;
+  font-weight: normal;
   background-color: rgba(0, 0, 0, 0.5);
   margin: 1.5rem;
   width: 100%;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
 }
 
 .commander-image {
@@ -176,16 +177,18 @@ body {
   overflow-y: scroll;
   border: 1px solid white;
   margin: 4rem 1.5rem 0 1.5rem;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
 }
 
 .content {
   padding: 0 2rem 0 2rem;
   color: #fff;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: normal;
   font-size: 24pt;
   /* margin-top: 20%; */
   margin-bottom: 1rem;
+  line-height: 150%;
 }
 
 /* ----------------------
@@ -255,6 +258,12 @@ body {
   padding: 2rem;
   background-color: #c4c4c4;
   color: #fff;
+}
+
+.operation-content div {
+  color: red;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
 }
 
 .left-nav-drawer {

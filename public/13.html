@@ -4,43 +4,69 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>13</title>
+    <title>12</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <!----------------------------------BODY--------------------------------------->
   <body>
-  <div class="wrapper">
-  <!----------------------------------LEFT--------------------------------------->
-    <div class="left">
-    <h1 class="commander">Commander <img
-        src="assets/dardania.png"
-        alt="crest-of-dardania"
-        class="commander-image"
-      /></h1>
-    <h3 class="content">
-      Commander, Dardania's In! Congratulations. The target opened the
-      spear-phishing email and clicked on the attachment. Dardania has just
-      gained access into Illyria's networks. It appears that our target has
-      opened the Excel file we sent and the trojan has been activated, and the
-      backdoor installed. I am pleased to say that we now have access to the
-      network of the Ministry of Defense of the Kingdom of Illyria and will
-      begin our mapping activities in search of their malware development.
-    </h3>
-    <nav>
-        <div class="nav-item">Intelligence Briefing</div>
-        <div class="nav-item">Operation Cyber Fortress</div>
-        <div class="nav-item active">From Cyber Command Mission Leader</div>
-      </nav>
-      <div class="page">13 / ?
+    <div class="container">
+      <div class="top-nav">
+        <div class="image-container">
+          <img
+            src="assets/dardania.png"
+            alt="crest-of-dardania"
+            class="commander-image"
+          />
+        </div>
+        <h1 class="commander">Commander</h1>
       </div>
-    <h4 class ="next"><a href="14.html">Next</a></h4>
-  <!----------------------------------RIGHT--------------------------------------->
-</div class="right">
-<div class="action-menu">
-    <h5>Action Menu</h5>
-</div>
-</div>
-</div>
-<script src="js/insertContent.js"></script>
+      <div class="grid">
+        <div class="grid-left">
+          <div class="operation">
+            <div class="operation-title">Operation Cyber Fortress</div>
+            <div class="operation-content">
+              Commander, Dardania's In! Congratulations. The target opened the
+              spear-phishing email and clicked on the attachment. Dardania has
+              just gained access into Illyria's networks. It appears that our
+              target has opened the Excel file we sent and the trojan has been
+              activated, and the backdoor installed. I am pleased to say that we
+              now have access to the network of the Ministry of Defense of the
+              Kingdom of Illyria and will begin our mapping activities in search
+              of their malware development.
+            </div>
+          </div>
+          <nav>
+            <div class="nav-item">Intelligence Briefing</div>
+            <div class="nav-item current">Operation Cyber Fortress</div>
+            <div class="nav-item">From Cyber Command Mission Leader</div>
+          </nav>
+          <div class="left-nav-drawer">
+            <div class="nav-drawer-page">13 / 25</div>
+            <div class="arrow-next">
+              <a href="14.html"><i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="grid-right">
+          <div class="terminal">
+            <div>
+              <h1>Action Menu</h1>
+              <div class="option">
+                <!-- <a href="#">::: [Opt 1] Launch spear-phishing attack</a> -->
+              </div>
+            </div>
+            <h1 class="select-action">Select the action to proceed</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/insertContent.js"></script>
   </body>
 </html>
