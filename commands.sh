@@ -6,14 +6,12 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 . ~/.nvm/nvm.sh
 nvm install node
 
-# Install git
-sudo yum install git | "y"
-
 # get code from s3
-aws s3 cp s3://ccspexp/ccsp.zip ccsp.zip
+aws s3 cp s3://ccspexperienceplatform/ccsp.zip ccsp.zip
 
 # unzip code
-sudo unzip ccsp.zip
+unzip ccsp.zip
+cd ccsp
 
 # Install process manager for node.js (pm2), run app using pm2
 npm install pm2 -g
@@ -22,13 +20,12 @@ pm2 startup
 pm2 save
 
 # Install Nginx web server
-sudo amazon-linux-extras install nginx1.12 | "y"
+amazon-linux-extras install nginx1.12 | "y"
 
 # Set up Nginx
-sudo nano /etc/nginx/nginx.conf
 cd /etc/nginx
-sudo aws s3 cp s3://ccspexp/nginx.conf nginx.conf
-sudo service nginx restart
-sudo chkconfig nginx on
+aws s3 cp s3://ccspexperienceplatform/nginx.conf nginx.conf
+service nginx restart
+chkconfig nginx on
 
 echo "Build complete!"
