@@ -99,6 +99,10 @@ body {
   margin-left: 1.5rem;
 }
 
+#nextPageBtn {
+  cursor: not-allowed;
+}
+
 /* ----------------------
 /* ---------------------- LEFT ---------------------- */
 
@@ -328,14 +332,31 @@ body {
   align-self: flex-end;
 }
 
-/* ----------------------
-/* ---------------------- PAGES WITH TOP NAV ---------------------- */
+.option .selected-option {
+  color: white !important;
+}
 
 .top-nav {
   display: flex;
   width: 100%;
   grid-column: 1 / 13;
   background-color: #b1d8bd;
+}
+
+/* ----------------------
+/* ---------------------- Survey ---------------------- */
+.survey-wrapper {
+  background-color: #ffffff;
+  padding: 6rem;
+  font-weight: normal;
+  line-height: 250%;
+  overflow-y: scroll;
+}
+
+.survey-textarea {
+  border: 2pt #000;
+  width: 600px;
+  height: 120px;
 }
 
 /* ----------------------
