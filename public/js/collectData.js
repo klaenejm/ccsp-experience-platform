@@ -1,5 +1,3 @@
-let timeLoaded = performance.now();
-
 let path = window.location.pathname;
 let pageNumber = path.substring(path.indexOf("/") + 1, path.indexOf("."));
 
@@ -19,8 +17,6 @@ nextPageBtn.addEventListener("click", (e) => {
     e.preventDefault();
     return;
   }
-  let timeFinished = performance.now();
-  localStorage.setItem(`action${actionNumber}t`, timeFinished / 1000);
 });
 
 options.forEach((option) => {
