@@ -10,7 +10,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 nvm install node
 
 # get code from s3
-aws s3 cp s3://ccspexperienceplatform/ccsp.zip ccsp.zip
+aws s3 cp s3://$BUCKET/ccsp.zip ccsp.zip
 
 # unzip code
 unzip ccsp.zip
@@ -23,12 +23,13 @@ pm2 startup
 pm2 save
 
 # Install Nginx web server
-amazon-linux-extras install nginx1.12 | "y"
+#sudo amazon-linux-extras install nginx1.12 | "y"
+sudo amazon-linux-extras install nginx1.12 | "y"
 
 # Set up Nginx
 cd /etc/nginx
-aws s3 cp s3://ccspexperienceplatform/nginx.conf nginx.conf
-service nginx restart
-chkconfig nginx on
+sudo aws s3 cp s3://$BUCKET/nginx.conf nginx.conf
+sudo service nginx restart
+sudo chkconfig nginx on
 
 echo "Build complete!"
