@@ -99,6 +99,10 @@ body {
   margin-left: 1.5rem;
 }
 
+#nextPageBtn {
+  cursor: not-allowed;
+}
+
 /* ----------------------
 /* ---------------------- LEFT ---------------------- */
 
@@ -326,6 +330,10 @@ body {
 .terminal .select-action {
   color: #7f7f7f;
   align-self: flex-end;
+}
+
+.option .selected-option {
+  color: white !important;
 }
 
 /* ----------------------
