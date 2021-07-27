@@ -12,25 +12,29 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <!----------------------------------BODY--------------------------------------->
   <body>
-    <h1>How would you rate your knowledge of cybersecurity issues?</h1>
-    <form>
-      <input type="Checkbox" name="1" value="yes" />Highly knowledgable<br />
-      <input type="Checkbox" name="2" value="yes" />Very knowledgable
-      <br />
-      <input type="Checkbox" name="3" value="yes" />Moderately knowledgable
-      <br />
-      <input type="Checkbox" name="4" value="yes" />Slightly knowledgable
-      <br />
-      <input type="Checkbox" name="4" value="yes" />Not knowledgeable at all
-      <br />
-      <input type="Checkbox" name="4" value="yes" />I don't know
-    </form>
-    <div class="arrow-next">
-      <a href="Survey_11.html"><i class="fas fa-long-arrow-alt-right"></i></a>
+    <div class="survey-wrapper">
+      <h1>How would you rate your knowledge of cybersecurity issues?</h1>
+      <div class="survey-form">
+        <form input type="radio">
+          <input type="radio" name="1" />Highly knowledgable<br />
+          <input type="radio" name="1" />Very knowledgable
+          <br />
+          <input type="radio" name="1" />Moderately knowledgable
+          <br />
+          <input type="radio" name="1" />Slightly knowledgable
+          <br />
+          <input type="radio" name="1" />Not knowledgeable at all
+          <br />
+          <input type="radio" name="1" />I don't know
+        </form>
+      </div>
+      <div class="arrow-next">
+        <a href="Survey_11.html"><i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
     </div>
     <script src="js/time.js"></script>
   </body>
