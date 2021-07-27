@@ -347,6 +347,7 @@ body {
 /* ---------------------- Survey ---------------------- */
 .survey-wrapper {
   background-color: #ffffff;
+  width: 100%;
   padding: 6rem;
   font-weight: normal;
   line-height: 250%;
