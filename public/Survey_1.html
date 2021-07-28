@@ -27,10 +27,25 @@
         in this study is entirely voluntary.
       </h1>
       <div class="arrow-next">
-        <a href="Survey_2.html"><i class="fas fa-long-arrow-alt-right"></i></a>
+        <a href="Survey_2.html"
+          ><i class="fas fa-long-arrow-alt-right" id="nextBtn"></i
+        ></a>
       </div>
       <script src="js/saveData.js"></script>
-      <script src="js/time.js"></script>
+      <script>
+        const pg = window.location.pathname.substring(
+          window.location.pathname.indexOf("/") + 1,
+          window.location.pathname.indexOf(".")
+        );
+
+        const timeLoaded = performance.now();
+        const nextBtn = document.getElementById("nextBtn");
+
+        nextBtn.addEventListener("click", (e) => {
+          const timeFinished = performance.now();
+          localStorage.setItem(`${pg}t`, (timeFinished - timeLoaded) / 1000);
+        });
+      </script>
     </div>
   </body>
 </html>
