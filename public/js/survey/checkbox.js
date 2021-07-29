@@ -11,7 +11,7 @@ const pgNum = Number.parseInt(
 );
 
 const timeLoaded = performance.now();
-const radios = document.getElementsByName("1");
+const checks = document.getElementsByName("1");
 const nextBtn = document.getElementById("nextBtn");
 
 nextBtn.addEventListener("click", (e) => {
@@ -20,9 +20,9 @@ nextBtn.addEventListener("click", (e) => {
     let answerSelected = false;
 
     let userAnswer = "";
-    radios.forEach((radio) => {
-      if (radio.checked) {
-        userAnswer = radio.value;
+    checks.forEach((check) => {
+      if (check.checked) {
+        userAnswer += check.value + ",";
         answerSelected = true;
       }
     });
