@@ -9,6 +9,14 @@ exitBtn.addEventListener("click", (e) => {
     data[key] = localStorage.getItem(key);
   }
 
-  console.log(data);
+  const url = "http://localhost:3000/results";
+  fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  });
+
   window.location.href = `thankyou.html`;
 });
