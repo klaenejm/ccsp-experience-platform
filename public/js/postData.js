@@ -9,7 +9,7 @@ exitBtn.addEventListener("click", (e) => {
     data[key] = localStorage.getItem(key);
   }
 
-  const url = "http://localhost:3000/results";
+  const url = "/results";
   fetch(url, {
     method: "POST",
     headers: {
