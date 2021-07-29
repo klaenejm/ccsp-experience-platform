@@ -6,7 +6,7 @@ const port = 8081;
 app.use(express.static("public"));
 app.use(express.json());
 
-app.post("/results", (req, res) => {
+app.post("/", (req, res) => {
   const result = req.body;
   fs.readFile("./data/db.json", function (err, data) {
     const json = JSON.parse(data);
