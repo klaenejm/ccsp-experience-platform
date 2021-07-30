@@ -1,6 +1,0 @@
-POST http://18.204.5.44/
-Content-Type: application/json
-
-{
-    "hello": "world"
-}
