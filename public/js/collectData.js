@@ -10,6 +10,7 @@ let answerSelected = false;
 
 // Need nextPageBtn id on every page
 const nextPageBtn = document.getElementById("nextPageBtn");
+nextPageBtn.style.cursor = "not-allowed";
 const options = document.querySelectorAll(".option a");
 
 nextPageBtn.addEventListener("click", (e) => {
@@ -21,6 +22,7 @@ nextPageBtn.addEventListener("click", (e) => {
 
 options.forEach((option) => {
   option.addEventListener("click", () => {
+    nextPageBtn.style.cursor = "pointer";
     let clicked = option.getAttribute("value");
     option.classList.add("selected-option");
     document.querySelectorAll(".option a").forEach((otherOpt) => {
