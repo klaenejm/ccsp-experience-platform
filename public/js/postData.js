@@ -90,13 +90,20 @@ exitBtn.addEventListener("click", (e) => {
     data[key] = localStorage.getItem(key);
   }
 
+  const orderedData = Object.keys(data)
+    .sort()
+    .reduce((obj, key) => {
+      obj[key] = data[key];
+      return obj;
+    }, {});
+
   const url = "/results";
   fetch(url, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(data),
+    body: JSON.stringify(orderedData),
   });
 
   window.location.href = `thankyou.html`;
